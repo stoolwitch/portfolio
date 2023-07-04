@@ -1,2 +1,3 @@
-# portfolio
-A website displaying my personal work!
+# Nyx's new portfolio
+
+Currently reworking my portfolio!
