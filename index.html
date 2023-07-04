@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/mainstyle.css">
     <title>Portfolio de Nyx</title>
 </head>
 <body>
     <header>
-        <a href="#">ham</a>
+        <a id="mobileMenu" onclick="hamburgerFunction()">
+            <p class="activepagename">>active</p>
+            <div id="hamburger"></div>
+        </a>
+       <div id="headerMenu" class="my-links hide">
         <nav>
-            <a href="#">>highlights</a>
-            <a href="#">>qui suis-je?</a>
-            <a href="#">>place de jeu</a>
+            <a id="highlights" href="#">>highlights</a>
+            <a id="aboutme" href="#">>qui suis-je?</a>
+            <a id="playground" href="#">>place de jeu</a>
         </nav>
         <footer>
             <a href="#">>switch to english</a>
             <a target='_blank' href='media/pdf/cv_nyx_fr.pdf'>>cv</a>
             <div id="footerIcons">
-                <a target='_blank' href='https://www.instagram.com/nyxviolet_ig/'></a>
-                <a target='_blank' href='https://www.youtube.com/channel/UCAoVVWLDIqLOpfyUKAA4yLA'></a>
-                <a target='_blank' href='https://www.linkedin.com/in/nyx-violet-schutz/'></a>
-                <a target='_blank' href='https://nyx-violet.itch.io'></a>
-                <a target='_blank' href='https://github.com/highrespasta'></a>
+                <a target='_blank' href='https://www.instagram.com/nyxviolet_ig/'><img src="media/svg/icons/instagram.svg" alt=""></a>
+                <a target='_blank' href='https://www.youtube.com/channel/UCAoVVWLDIqLOpfyUKAA4yLA'><img src="media/svg/icons/youtube.svg" alt=""></a>
+                <a target='_blank' href='https://www.linkedin.com/in/nyx-violet-schutz/'><img src="media/png/icons/linkedin.png" alt=""></a>
+                <a target='_blank' href='https://nyx-violet.itch.io'><img src="media/svg/icons/itchio.svg" alt=""></a>
+                <a target='_blank' href='https://github.com/stoolwitch'><img src="media/svg/icons/github.svg" alt=""></a>
             </div>
         </footer>
+    </div> 
     </header>
     <main>
 
     </main>
+
+    <script src="script/hamburger.js"></script>
 </body>
 </html>

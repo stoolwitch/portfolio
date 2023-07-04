@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Poppins;
+    font-weight: 400;
+    src: url("../media/fonts/Poppins-Regular.woff2");
+}
+
+@font-face {
+    font-family: Poppins;
+    font-weight: 500;
+    src: url("../media/fonts/Poppins-Medium.woff2");
+}
+
+@font-face {
+    font-family: Sligoil;
+    src: url("../media/fonts/Sligoil-Micro.woff2");
+}
