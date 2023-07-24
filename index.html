@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style/hightlights.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/playground.css">
-    <title>Portfolio de Nyx</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title class="lang-title">Portfolio de Nyx</title>
 </head>
 <body>
     <header>
@@ -18,13 +19,15 @@
         </a>
         <div id="headerMenu" class="my-links hide">
             <nav>
-                <a id="highlights" class="activepage">>highlights</a>
-                <a id="aboutme">>qui suis-je?</a>
-                <a id="playground">>place de jeu</a>
+                <a id="highlights" class="lang activepage" key="highlights">>highlights</a>
+                <a id="aboutme" class="lang" key="about">>qui suis-je?</a>
+                <a id="playground" class="lang" key="playground">>place de jeu</a>
             </nav>
             <footer>
-                <a href="#">>switch to english</a>
-                <a target='_blank' href='media/pdf/cv_nyx_fr.pdf'>>cv</a>
+                <div id="langues"><a class="translate" id="en">>en</a>
+                    <a class="translate" id="fr">>fr</a></div>
+                
+                <a target='_blank' class="lang" key="cv" href='media/pdf/cv_nyx_fr.pdf'>>cv</a>
                 <div id="footerIcons">
                     <a target='_blank' href='https://www.instagram.com/nyxviolet_ig/'><img src="media/svg/icons/instagram.svg" alt=""></a>
                     <a target='_blank' href='https://www.youtube.com/channel/UCAoVVWLDIqLOpfyUKAA4yLA'><img src="media/svg/icons/youtube.svg" alt=""></a>
@@ -43,5 +46,6 @@
     <script src="script/addhtml.js">
         includeHTML();
     </script>
+    <script src="script/lang.js"></script>
 </body>
 </html>
