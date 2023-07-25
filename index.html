@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/mainstyle.css">
-    <link rel="stylesheet" href="style/hightlights.css">
+    <link rel="stylesheet" href="style/highlights.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/playground.css">
-    <script src="script/jquery.min.js"></script>
     <title class="lang-title">Portfolio de Nyx</title>
+    
 </head>
 <body>
     <header>
@@ -24,9 +24,10 @@
                 <a id="playground" class="lang" key="playground">>place de jeu</a>
             </nav>
             <footer>
-                <div id="langues"><a class="translate" id="en">>en</a>
-                    <a class="translate" id="fr">>fr</a></div>
-                
+                <div id="langues">
+                    <a onclick="setLanguage('en')">>en</a>
+                    <a onclick="setLanguage('fr')">>fr</a>
+                </div>
                 <a target='_blank' class="lang" key="cv" href='media/pdf/cv_nyx_fr.pdf'>>cv</a>
                 <div id="footerIcons">
                     <a target='_blank' href='https://www.instagram.com/nyxviolet_ig/'><img src="media/svg/icons/instagram.svg" alt=""></a>
@@ -39,9 +40,9 @@
         </div> 
     </header>
     <main id="main" w3-include-html="highlights.html">
-
+        un petit machin qui tourne en rond dans la farandole de la vie de tous les jours.
     </main>
-
+    <script src="script/jquery.min.js"></script>
     <script src="script/hamburger.js"></script>
     <script src="script/addhtml.js">
         includeHTML();

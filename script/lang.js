@@ -1,34 +1,12 @@
-let arrLang = {
-    en: {
-        'highlights' : '>highlights',
-        'about' : '>who am i?',
-        'playground' : '>playground',
-        'cv' : '>resume'
-    },
-
-    fr: {
-        'highlights' : '>sélection',
-        'about' : '>qui suis-je?',
-        'playground' : '>place de jeu',
-        'cv' : '>cv'
-    }
+var language; 
+function getLanguage() {
+(localStorage.getItem('language') == null) ? setLanguage('fr') : false;
+$.ajax({ 
+url:  '/language/' +  localStorage.getItem('language') + '.json', 
+dataType: 'json', async: false, dataType: 'json', 
+success: function (lang) { language = lang } });
 }
 
-$(function() {
-let lang =localStorage.getItem('language');
-changeLanguage(lang);
-
-
-$('.translate').click(function(){
- lang = $(this).attr('id');
- localStorage.setItem('language', lang);
- changeLanguage(lang);
-});
-
-function changeLanguage(lang){
-$('.lang').each(function(index,element){
-     $(this).text(arrLang[lang][$(this).attr('key')]);
- }); 
+function setLanguage(lang) {
+localStorage.setItem('language', lang);
 }
-
-})
