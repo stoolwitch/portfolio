@@ -14,14 +14,14 @@
 <body>
     <header>
         <a id="mobileMenu" onclick="hamburgerFunction()">
-            <p class="activepagename">>highlights</p>
+            <p id="activepagename">>highlights</p>
             <div id="hamburger"></div>
         </a>
         <div id="headerMenu" class="my-links hide">
             <nav>
-                <a id="highlights" class="lang activepage" key="highlights">>sélection</a>
-                <a id="aboutme" class="lang" key="about">>qui suis-je?</a>
-                <a id="playground" class="lang" key="playground">>place de jeu</a>
+                <a id="highlights" onclick="switchPage(event)" class="navlink lang activepage" key="highlights">>sélection</a>
+                <a id="aboutme" onclick="switchPage(event)" class="navlink lang" key="about">>qui suis-je?</a>
+                <a id="playground" onclick="switchPage(event)" class="navlink lang" key="playground">>place de jeu</a>
             </nav>
             <footer>
                 <div id="langues">
@@ -39,14 +39,20 @@
             </footer>
         </div> 
     </header>
-    <main id="main" w3-include-html="highlights.html">
-        un petit machin qui tourne en rond dans la farandole de la vie de tous les jours.
+    <main id="main">
+        <div class="pageContainers" id="highlightsContainer">
+            highlights
+        </div>
+        <div class="pageContainers" id="aboutmeContainer">
+            about :)
+        </div>
+        <div class="pageContainers" id="playgroundContainer">
+            playground:)
+        </div>
     </main>
     <script src="script/jquery.min.js"></script>
     <script src="script/hamburger.js"></script>
-    <script src="script/addhtml.js">
-        includeHTML();
-    </script>
+    <script src="script/switchpage.js"></script>
     <script src="script/lang.js"></script>
 </body>
 </html>

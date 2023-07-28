@@ -1,10 +1,10 @@
 :root {
     --yellow: #FFFBBE;
-    --paleyellow: #FFFEF2;
+    --aboutme: #FFFEF2;
     --pink: #FFC2FF;
-    --palepink: #FFF2FF;
+    --highlights: #FFF2FF;
     --turquoise: #B5FFFC;
-    --paleturquoise: #EDFFFE;
+    --playground: #EDFFFE;
 }
 
 * {
@@ -24,13 +24,14 @@ a, p, h1, h2, h3 {
 body {
     display: flex;
     flex-direction: column;
+    background-color: var(--highlights);
 }
 
 header {
     width: 100vw;
     height: auto;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.054);
-
+    background-color: white;
     a {
         font-family: 'Sligoil', monospace;
         font-size: 2rem;
@@ -89,20 +90,21 @@ header {
 #main {
     width: 100vw;
     height: 200px;
-    background-color: antiquewhite;
+    z-index: -1;
 }
 
 @media screen and (min-width: 800px) {
     body {
         display: flex;
         flex-direction: row;
+        height: 100vh;
+        overflow: hidden;
     }
 
     header {
         width: clamp(600px, 30vw, 800px);
         height: 100vh;
         box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.054);
-    
         #mobileMenu {
             display: none;
         }
@@ -212,7 +214,6 @@ header {
     #main {
         max-width: 70vw;
         height: auto;
-        background-color: antiquewhite;
-        z-index: -1;
+        overflow-y: scroll;
     }
 }
