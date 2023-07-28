@@ -2,7 +2,7 @@
 
 Currently reworking my portfolio!
 
-Whereas my current portfolio, nyxviolet.com, is a one page and is convenient like that, I feel like it's too restrictive for the content I want to put inside. I am restricted to 5ish projects but I want to be able to add more and maybe also less serious ones.
+Whereas my [current portfolio](https://nyxviolet.com) is a one page and is convenient like that, I feel like it's too restrictive for the content I want to put inside. I am restricted to 5ish projects but I want to be able to add more and maybe also less serious ones.
 
 My new portfolio will have 3 pages: Highlights, About me & Playground.
 
