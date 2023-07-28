@@ -21,6 +21,8 @@ a, p, h1, h2, h3 {
     display: none;
 }
 
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -48,11 +50,25 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        background-color: white;
+
         #hamburger {
             width: 3rem;
             height: 3rem;
             background-color: black;
         }
+    }
+
+    #headerMenu {
+        position: absolute;
+        background-color: white;
+        width: 100vw;
+        top: 0;
+        transition: 0.25s ease-out;
+    }
+
+    #headerMenu.hideheadermenu {
+        top: -100%;
     }
 
     #highlights {
@@ -110,7 +126,9 @@ header {
         }
 
         #headerMenu {
+            top: 0 !important;
             height: 100%;
+            width: inherit;
             display: flex;
             flex-direction: column;
             justify-content: space-between;

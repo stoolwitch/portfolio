@@ -15,4 +15,5 @@ function switchPage(event) {
     containers[i].classList.add('hide');
   }
   document.getElementById(currentID + "Container").classList.remove('hide');
+  hamburgerFunction();
 }
