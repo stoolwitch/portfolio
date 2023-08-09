@@ -10,6 +10,11 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
+}
+
+*:-webkit-scrollbar {
+    display: none;
 }
 
 a, p, h1, h2, h3 {
@@ -109,24 +114,26 @@ header {
     z-index: -1;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1025px) {
     body {
         display: flex;
         flex-direction: row;
         height: 100vh;
-        overflow: hidden;
+        // overflow: hidden;
     }
 
     header {
-        width: clamp(600px, 30vw, 800px);
+        width: clamp(400px, 30vw, 600px);
         height: 100vh;
         box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.054);
+        position: fixed;
         #mobileMenu {
             display: none;
         }
 
         #headerMenu {
             top: 0 !important;
+            position: relative;
             height: 100%;
             width: inherit;
             display: flex;
@@ -235,6 +242,6 @@ header {
     #main {
         max-width: 70vw;
         height: auto;
-        overflow-y: scroll;
+        margin-left:clamp(400px, 30vw, 600px);
     }
 }

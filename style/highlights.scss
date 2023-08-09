@@ -1,0 +1,60 @@
+.project {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    .project-title {
+        font-family: "Sligoil", monospace;
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+    .project-description, .project-links, .project-list {
+        font-family: "Poppins";
+        font-weight: 400;
+        padding: 0 1rem;
+    }
+    .project-subtitle {
+        font-family: "Sligoil", monospace;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem !important;
+        padding: 0 1rem;
+    }
+    .project-gallery {
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, 50vw);
+        // justify-content: center;
+        // .project-image img {
+        //     width: 50vw;
+        // }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: fit-content;
+        .project-image{
+            img {
+                width: 50vw;
+                display: block;
+            } 
+        }
+    }
+
+    .project-list {
+        margin-left: 1rem;
+        list-style: none;
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .project-links {
+        margin-bottom: 0.5rem;
+    }
+
+    a:hover {
+        color: #696969;
+    }
+}
+
+.project>* {
+    margin-bottom: 1rem;
+}
