@@ -1,1 +1,1 @@
-.me-image img{width:100vw;display:block}
+.me-image img{width:100vw;display:block;margin-bottom:1rem}@media screen and (min-width: 1025px){.me-image img{width:100%;display:block}#aboutme .me-content{display:grid;grid-template-columns:1fr 2fr}#aboutme .me-content .me-desktop-left-column{grid-column-start:1;grid-column-end:2}#aboutme .me-content .me-desktop-right-column{grid-column-start:2;grid-column-end:3}}

@@ -17,7 +17,11 @@
         font-family: "Sligoil", monospace;
         font-size: 1.5rem;
         margin-bottom: 0.5rem !important;
+        margin-top: 1rem;
         padding: 0 1rem;
+    }
+    .project-credits {
+        margin-bottom: 0.5rem;
     }
     .project-gallery {
         // display: grid;
@@ -57,4 +61,37 @@
 
 .project>* {
     margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1025px) {
+    .project {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        .project-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .desktop-left-column {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            
+            .desktop-right-column {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                .project-subtitle {
+                    margin-top: 0;
+                }
+            }
+        }
+        
+
+        .project-gallery {
+            .project-image {
+                width: 50%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

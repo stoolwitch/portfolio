@@ -22,11 +22,13 @@ a, p, h1, h2, h3 {
     text-decoration: none;
 }
 
-.hide {
+.hide, .hide-when-mobile {
     display: none;
 }
 
-
+.hide-when-desktop {
+    display: block;
+}
 
 body {
     display: flex;
@@ -115,6 +117,16 @@ header {
 }
 
 @media screen and (min-width: 1025px) {
+
+ 
+    .hide-when-desktop {
+        display: none;
+    }
+    
+    .hide-when-mobile {
+        display: block;
+    }
+
     body {
         display: flex;
         flex-direction: row;
