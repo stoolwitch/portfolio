@@ -11,7 +11,7 @@
     <title class="lang-title">Nyx Violet Schütz, Interactive Media Designer</title>
     
 </head>
-<body>
+<body onload="init()">
     <header>
         <a id="mobileMenu" onclick="hamburgerFunction()">
             <p id="activepagename">>sélection</p>
@@ -158,7 +158,18 @@
             </article>
         </div>
         <div class="pageContainers hide" id="playgroundContainer" loading="lazy">
-            playground
+            <div id="floater">
+                <article class="floating-cards"><div class="card-visual"></div></article>
+                <article class="floating-cards"><div class="card-visual"></div></article>
+                <article class="floating-cards"><div class="card-visual"></div></article>
+                <article class="floating-cards"><div class="card-visual"></div></article>
+                <article class="floating-cards"><div class="card-visual"></div></article>
+                <article class="floating-cards"><div class="card-visual"></div></article>
+                <article class="floating-cards"><div class="card-visual"></div></article>
+                <article class="floating-cards"><div class="card-visual"></div></article>
+                <article class="floating-cards"><div class="card-visual"></div></article>
+                <article class="floating-cards"><div class="card-visual"></div></article>
+            </div>
         </div>
     </main>
     <script src="script/jquery.min.js"></script>
@@ -166,5 +177,7 @@
     <script src="script/switchpage.js"></script>
     <script src="script/lang.js"></script>
     <script src="script/mail.js"></script>
+    <script src="script/windowsize.js"></script>
+    <script src="script/randomfloatertrans.js"></script>
 </body>
 </html>
