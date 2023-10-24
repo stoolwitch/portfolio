@@ -10,7 +10,7 @@ function switchPage(event) {
   });
   thisLink.classList.add("activepage");
   activepagename.innerHTML = thisLink.innerHTML;
-  document.body.style.backgroundColor = "var(--" + currentID + ")";
+  // document.body.style.backgroundColor = "var(--" + currentID + ")";
   for (var i = 0; i < containers.length; i++) {
     containers[i].classList.add('hide');
   }
